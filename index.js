@@ -102,9 +102,7 @@ module.exports = function (fn, options) {
         throw new Error('webworkify-webpack: Could not locate module containing worker function! Make sure you aren\'t using eval sourcemaps and that you pass named functions to webworkify-webpack!');
     }
 
-    // window = {}; => https://github.com/borisirota/webworkify-webpack/issues/1
-    var src = 'window = {};\n'
-        + 'var fn = (' + webpackBootstrapFunc.toString().replace('entryModule', key) + ')(['
+    var src = 'var fn = (' + webpackBootstrapFunc.toString().replace('entryModule', key) + ')(['
         + moduleWrapperStrings.join(',')
         + ']);\n'
         + '(typeof fn === "function") && fn(self);'; // not a function when calling a function from the current scope

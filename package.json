@@ -23,7 +23,9 @@
     "webpack"
   ],
   "author": "Boris Sirota <borisirota@gmail.com> (https://github.com/borisirota)",
-  "contributors": ["Ambroos Vaes <ambroosv@gmail.com> (https://github.com/Ambroos"],
+  "contributors": [
+    "Ambroos Vaes <ambroosv@gmail.com> (https://github.com/Ambroos"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Ambroos/webworkify-webpack/issues"
