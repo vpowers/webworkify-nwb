@@ -1,8 +1,10 @@
-# webworkify-webpack
+# webworkify-webpack-dropin
 
 launch a web worker that can require() in the browser with webpack
 
 inspired by [webworkify](https://github.com/substack/webworkify)
+
+This version is a fork of [borisirota/webworkify-webpack](https://github.com/borisirota/webworkify-webpack) with one tiny change (no shimming of `window` to `{}`) to remain compatible with the original webworkify.
 
 # example
 
